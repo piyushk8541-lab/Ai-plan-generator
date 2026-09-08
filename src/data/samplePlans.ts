@@ -1,0 +1,83 @@
+import { Plan } from '../types/plan';
+import { PlanGeneratorService } from '../services/planGenerator';
+
+export const SAMPLE_PLANS: Plan[] = [
+  PlanGeneratorService.generatePlan({
+    category: 'study',
+    goal: 'Master Full-Stack Web Development (React, Node.js & System Design)',
+    durationValue: 60,
+    durationUnit: 'days',
+    intensity: 'intensive',
+    answers: {
+      subjectOrTopic: 'Full-Stack Web Development & Next.js Ecosystem',
+      currentLevel: 'Intermediate (Know basic HTML/CSS/JS)',
+      hoursPerDay: '3-4 hours / day',
+      learningStyle: 'Project-Based & Practical Application',
+      weakAreas: 'Database indexing, state management, Docker deployment',
+    },
+    customNotes: 'Targeting a junior to mid-level engineering role or building SaaS products.',
+  }),
+  PlanGeneratorService.generatePlan({
+    category: 'trip',
+    goal: '7-Day Magical Tokyo & Kyoto Explorer',
+    durationValue: 7,
+    durationUnit: 'days',
+    intensity: 'balanced',
+    answers: {
+      destination: 'Tokyo & Kyoto, Japan',
+      travelStyle: 'Solo Explorer (Flexibility & Hostels/Boutique)',
+      budgetTier: 'Moderate / Balanced ($80 - $180 / day)',
+      travelPace: 'Balanced (3-4 spots/day with buffer time)',
+      interests: 'Ramen & Street Food, Shinkansen, Ancient Shrines, Akihabara & Shibuya Sky',
+      dietaryOrSpecial: 'Prefers public transit Suica card, early mornings for photo spots',
+    },
+    customNotes: 'Visiting in spring cherry blossom season.',
+  }),
+  PlanGeneratorService.generatePlan({
+    category: 'fitness',
+    goal: '12-Week Lean Hypertrophy & Athletic Strength',
+    durationValue: 12,
+    durationUnit: 'weeks',
+    intensity: 'intensive',
+    answers: {
+      primaryFitnessGoal: 'Build Muscle & Hypertrophy',
+      fitnessLevel: 'Intermediate (1-3 years lifting experience)',
+      daysPerWeek: '4 Days/Week (Upper / Lower Split)',
+      equipmentAccess: 'Commercial Gym (Full barbells, machines, cables, dumbbells)',
+      sessionDuration: '45-60 minutes (Standard)',
+      injuriesOrLimitations: 'Slight right knee click; avoid ultra-deep heavy squats without warmup',
+    },
+    customNotes: 'Targeting 3-4 kg clean lean mass gain with visible abs.',
+  }),
+  PlanGeneratorService.generatePlan({
+    category: 'business',
+    goal: 'Launch B2B Micro-SaaS MVP to First 50 Paying Customers',
+    durationValue: 60,
+    durationUnit: 'days',
+    intensity: 'bootcamp',
+    answers: {
+      businessConcept: 'AI automated meeting transcription & action item generator for remote agencies',
+      targetAudience: 'Digital agency owners and remote team leads',
+      startingBudget: '$500 - $2,500',
+      teamStructure: 'Solo Founder (Full-time dedication)',
+      currentStage: 'Basic prototype / research done',
+      primaryRevenueModel: 'Subscription / SaaS Monthly Recurring ($29/mo)',
+    },
+    customNotes: 'Focus ruthlessly on cold LinkedIn outbound and Product Hunt launch.',
+  }),
+  PlanGeneratorService.generatePlan({
+    category: 'budget',
+    goal: 'Debt-Free Avalanche & $10,000 Emergency Safety Fund',
+    durationValue: 6,
+    durationUnit: 'months',
+    intensity: 'balanced',
+    answers: {
+      financialGoal: 'Pay off High-Interest Debt / Loans',
+      monthlyIncome: '$4,200 / month net',
+      fixedExpenses: '$2,400 / month (Rent, Utilities, Food)',
+      targetAmount: '$10,000 emergency fund + $6,000 credit card payoff',
+      strategyPreference: '50/30/20 Rule (Needs / Wants / Savings)',
+    },
+    customNotes: 'Eliminate $6k 21% APR debt within first 3 months using aggressive avalanche method.',
+  }),
+];
